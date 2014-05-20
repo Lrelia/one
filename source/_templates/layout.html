@@ -1,0 +1,16 @@
+{% extends "!layout.html" %}
+
+{% set bootswatch_css_custom = ['_static/youmi.css'] %}
+
+{% block footer %}
+    <footer class="footer">
+        <div class="container">
+            <p class="pull-right"><a href="#">返回顶端</a></p>
+            <p>© Copyright 2014, Youmi.net</p>
+        </div>
+    </footer>
+    <script>
+        $("#dLabelLocalToc").html('导航 <b class="caret"></b>');
+        $(".admonition-title").html('注意：');
+    </script>
+{% endblock %}
